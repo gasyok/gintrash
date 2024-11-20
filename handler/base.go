@@ -29,7 +29,6 @@ func (h *Handler) BaseGet(c *gin.Context) {
 
 		return nil
 	}
-	// _ = resp
 
 	var notFound *domain.ErrNotFound
 	switch err := flow(); {
